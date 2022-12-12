@@ -70,12 +70,15 @@ const verifyInput = (frame, input) => {
             if (num[0] + num[1] === 10 && num[0] !== 10 && num[1] !== 10) {
                 return num
             }
+            else if (num[0] + num[1] === 10 && num[0] === 0 && num[1] === 10) {
+                return num
+            }
 
             return 'Error in scroes Inputed'
         }
-        
+
         if (lgth === 4) {
-            if (num[0] + num[1] === 10 && num[0] === 10 || num[1] === 10) {
+            if (num[0] + num[1] === 10 && num[0] === 10 && num[1] === 0) {
                 return num
             }
             return 'Error in scroes Inputed'
